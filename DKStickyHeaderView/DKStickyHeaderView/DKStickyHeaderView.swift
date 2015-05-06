@@ -42,16 +42,21 @@ class DKStickyHeaderView: UIView {
     }
     
     override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
-        let scrollView = self.superview as! UIScrollView
-        
-        var delta: CGFloat = 0.0
-        if scrollView.contentOffset.y < 0.0 {
-            delta = fabs(min(0.0, scrollView.contentOffset.y))
+        if keyPath == KEY_PATH_CONTENTOFFSET {
+            let scrollView = self.superview as! UIScrollView
+            
+            var delta: CGFloat = 0.0
+            if scrollView.contentOffset.y < 0.0 {
+                delta = fabs(min(0.0, scrollView.contentOffset.y))
+            }
+            
+            var newFrame = self.frame
+            newFrame.origin.y = -delta
+            newFrame.size.height = self.minHeight + delta
+            self.frame = newFrame
+        } else {
+            super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
         }
-        
-        var newFrame = self.frame
-        newFrame.origin.y = -delta
-        newFrame.size.height = self.minHeight + delta
-        self.frame = newFrame
     }
+    
 }
