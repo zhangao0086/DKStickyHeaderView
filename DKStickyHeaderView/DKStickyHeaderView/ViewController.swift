@@ -14,7 +14,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         let headerView = DKStickyHeaderView(minHeight: 150)
-        headerView.autoresizingMask = .FlexibleWidth
         headerView.backgroundColor = UIColor.blueColor()
         
         let imageView = UIImageView(image: UIImage(named: "Image"))

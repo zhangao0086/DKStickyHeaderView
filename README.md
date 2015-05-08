@@ -2,6 +2,14 @@
 The SticklyHeaderView can sticks to the top and stretches when you pull down.  
 ![GIF](https://raw.githubusercontent.com/zhangao0086/DKStickyHeaderView/master/Preview1.gif)
 
+# How to use
+
+```swift
+let headerView = DKStickyHeaderView(minHeight: 0)
+headerView.backgroundColor = UIColor.blueColor()
+self.tableView.addSubview(headerView)
+```
+
 # Based on Key-Value Observing
 
 ```swift
