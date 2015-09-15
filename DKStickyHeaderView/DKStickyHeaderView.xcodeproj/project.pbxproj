@@ -12,20 +12,9 @@
 		9CD5798B1AF796EC0029C287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD579891AF796EC0029C287 /* Main.storyboard */; };
 		9CD5798D1AF796EC0029C287 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD5798C1AF796EC0029C287 /* Images.xcassets */; };
 		9CD579901AF796EC0029C287 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD5798E1AF796EC0029C287 /* LaunchScreen.xib */; };
-		9CD5799C1AF796EC0029C287 /* DKStickyHeaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5799B1AF796EC0029C287 /* DKStickyHeaderViewTests.swift */; };
 		9CD579A61AF797170029C287 /* DKStickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD579A51AF797170029C287 /* DKStickyHeaderView.swift */; };
 		9CDD3BEC1AF86CBD00FB2DED /* DKMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDD3BEB1AF86CBD00FB2DED /* DKMenuController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9CD579961AF796EC0029C287 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9CD579781AF796EC0029C287 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9CD5797F1AF796EC0029C287;
-			remoteInfo = DKStickyHeaderView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9CD579801AF796EC0029C287 /* DKStickyHeaderView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKStickyHeaderView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,22 +24,12 @@
 		9CD5798A1AF796EC0029C287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CD5798C1AF796EC0029C287 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9CD5798F1AF796EC0029C287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9CD579951AF796EC0029C287 /* DKStickyHeaderViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKStickyHeaderViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CD5799A1AF796EC0029C287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CD5799B1AF796EC0029C287 /* DKStickyHeaderViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKStickyHeaderViewTests.swift; sourceTree = "<group>"; };
 		9CD579A51AF797170029C287 /* DKStickyHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKStickyHeaderView.swift; sourceTree = "<group>"; };
 		9CDD3BEB1AF86CBD00FB2DED /* DKMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9CD5797D1AF796EC0029C287 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CD579921AF796EC0029C287 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				9CD579821AF796EC0029C287 /* DKStickyHeaderView */,
-				9CD579981AF796EC0029C287 /* DKStickyHeaderViewTests */,
 				9CD579811AF796EC0029C287 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				9CD579801AF796EC0029C287 /* DKStickyHeaderView.app */,
-				9CD579951AF796EC0029C287 /* DKStickyHeaderViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,23 +78,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9CD579981AF796EC0029C287 /* DKStickyHeaderViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				9CD5799B1AF796EC0029C287 /* DKStickyHeaderViewTests.swift */,
-				9CD579991AF796EC0029C287 /* Supporting Files */,
-			);
-			path = DKStickyHeaderViewTests;
-			sourceTree = "<group>";
-		};
-		9CD579991AF796EC0029C287 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9CD5799A1AF796EC0029C287 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,39 +98,18 @@
 			productReference = 9CD579801AF796EC0029C287 /* DKStickyHeaderView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9CD579941AF796EC0029C287 /* DKStickyHeaderViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9CD579A21AF796EC0029C287 /* Build configuration list for PBXNativeTarget "DKStickyHeaderViewTests" */;
-			buildPhases = (
-				9CD579911AF796EC0029C287 /* Sources */,
-				9CD579921AF796EC0029C287 /* Frameworks */,
-				9CD579931AF796EC0029C287 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9CD579971AF796EC0029C287 /* PBXTargetDependency */,
-			);
-			name = DKStickyHeaderViewTests;
-			productName = DKStickyHeaderViewTests;
-			productReference = 9CD579951AF796EC0029C287 /* DKStickyHeaderViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9CD579781AF796EC0029C287 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = ZhangAo;
 				TargetAttributes = {
 					9CD5797F1AF796EC0029C287 = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					9CD579941AF796EC0029C287 = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 9CD5797F1AF796EC0029C287;
 					};
 				};
 			};
@@ -188,7 +127,6 @@
 			projectRoot = "";
 			targets = (
 				9CD5797F1AF796EC0029C287 /* DKStickyHeaderView */,
-				9CD579941AF796EC0029C287 /* DKStickyHeaderViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,13 +139,6 @@
 				9CD5798B1AF796EC0029C287 /* Main.storyboard in Resources */,
 				9CD579901AF796EC0029C287 /* LaunchScreen.xib in Resources */,
 				9CD5798D1AF796EC0029C287 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CD579931AF796EC0029C287 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,23 +156,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CD579911AF796EC0029C287 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9CD5799C1AF796EC0029C287 /* DKStickyHeaderViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9CD579971AF796EC0029C287 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9CD5797F1AF796EC0029C287 /* DKStickyHeaderView */;
-			targetProxy = 9CD579961AF796EC0029C287 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9CD579891AF796EC0029C287 /* Main.storyboard */ = {
@@ -284,6 +199,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -352,6 +268,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DKStickyHeaderView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhangao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -362,41 +279,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DKStickyHeaderView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhangao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		9CD579A31AF796EC0029C287 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DKStickyHeaderViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DKStickyHeaderView.app/DKStickyHeaderView";
-			};
-			name = Debug;
-		};
-		9CD579A41AF796EC0029C287 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DKStickyHeaderViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DKStickyHeaderView.app/DKStickyHeaderView";
 			};
 			name = Release;
 		};
@@ -417,15 +301,6 @@
 			buildConfigurations = (
 				9CD579A01AF796EC0029C287 /* Debug */,
 				9CD579A11AF796EC0029C287 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9CD579A21AF796EC0029C287 /* Build configuration list for PBXNativeTarget "DKStickyHeaderViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9CD579A31AF796EC0029C287 /* Debug */,
-				9CD579A41AF796EC0029C287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -19,9 +19,9 @@ class ViewController: UIViewController {
         let imageView = UIImageView(image: UIImage(named: "Image"))
         headerView.addSubview(imageView)
         imageView.frame = headerView.bounds
-        imageView.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+        imageView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         imageView.contentMode = UIViewContentMode.ScaleAspectFill
-        
+
         self.view.addSubview(headerView)
     }
 

@@ -12,7 +12,7 @@ class DKMenuController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let headerView = DKStickyHeaderView(minHeight: 0)
         headerView.backgroundColor = UIColor.blueColor()
         self.tableView.addSubview(headerView)
